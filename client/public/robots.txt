@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /.well-known
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://pabsolutionsite.vercel.app/sitemap.xml

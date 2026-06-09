@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "dist/index.js"
+    },
+    {
+      "src": "/manus-storage/(.*)",
+      "dest": "dist/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.js"
+    }
+  ]
+}
